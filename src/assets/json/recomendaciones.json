@@ -1,0 +1,70 @@
+[
+	{
+		"id": "0",
+		"titular": "Perfume Jeffry",
+		"imagen": "assets/test/perfume.jpg",
+		"fecha": "12/05/2018",
+		"descripcioncorta": "La fragancia sodomita para hombres que buscan a su macho peludo, lomo plateado",
+		"precio": "120 S/.",
+		"personas": [
+					{					
+						"id": "0",	
+						"imagen": "assets/test/test1.jpg"
+					},
+					{
+						"id": "1",
+						"imagen": "assets/test/test2.jpg"
+					}
+				]
+	},
+	{
+		"id": "1",
+		"titular": "Perfume Jeffry",
+		"imagen": "assets/test/perfume.jpg",
+		"fecha": "12/05/2018",
+		"descripcioncorta": "La fragancia sodomita para hombres que buscan a su macho peludo, lomo plateado",
+		"precio": "120 S/.",
+		"personas": [
+					{					
+						"id": "0",	
+						"imagen": "assets/test/test3.jpg"
+					}
+				]
+	},
+	{
+		"id": "2",
+		"titular": "Perfume Jeffry",
+		"imagen": "assets/test/perfume.jpg",
+		"fecha": "12/05/2018",
+		"descripcioncorta": "La fragancia sodomita para hombres que buscan a su macho peludo, lomo plateado",
+		"precio": "120 S/.",
+		"personas": [
+					{					
+						"id": "0",	
+						"imagen": "assets/test/test3.jpg"
+					},
+					{
+						"id": "1",
+						"imagen": "assets/test/test4.jpg"
+					}
+				]
+	},
+	{
+		"id": "3",
+		"titular": "Perfume Jeffry",
+		"imagen": "assets/test/perfume.jpg",
+		"fecha": "12/05/2018",
+		"descripcioncorta": "La fragancia sodomita para hombres que buscan a su macho peludo, lomo plateado",
+		"precio": "120 S/.",
+		"personas": [
+					{					
+						"id": "0",	
+						"imagen": "assets/test/test5.jpg"
+					},
+					{
+						"id": "1",
+						"imagen": "assets/test/test1.jpg"
+					}
+				]
+	}
+]

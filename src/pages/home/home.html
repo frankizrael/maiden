@@ -1,0 +1,88 @@
+<ion-header class="headerCronos">
+	<ion-row>
+		<ion-col col-4>		
+		    <button ion-button icon-only menuToggle>
+		      <ion-icon name="menu"></ion-icon>
+		    </button>
+		</ion-col>			
+		<ion-col col-4>
+			<div class="logoHeader">
+				<img src="assets/img/logo1.png">
+			</div>
+		</ion-col>
+		<ion-col col-4>
+			<div class="notification">
+				<ion-icon name="notifications"></ion-icon>
+				<span class="number">{{notificaciones}}</span>
+			</div>
+		</ion-col>
+	</ion-row>
+</ion-header>
+ 
+<ion-content class="home" padding>
+  <!--usuario {{username}}!
+  email: {{email}}-->
+  
+  <div class="slidesPersonas">
+  		<div class="contentPersonas" *ngFor="let personaFavorita of personasFavoritas" (click)="openModal({charNum: personaFavorita.id})">
+  			<div class="personaItem" >
+  				<div class="avatarPersona">
+  					<img src="{{personaFavorita.imagen}}">
+  				</div> 
+  			</div>
+  		</div>
+  </div> 
+  <div class="sectionRecomendaciones">
+  	<div class="recomendaContent">
+  		<ion-card *ngFor="let recomendacion of recomendacionesDashboard">
+		  <ion-row>
+		  	<ion-col col-4>
+		  		<img src="{{recomendacion.imagen}}">
+		  	</ion-col>
+		  	<ion-col col-8>
+		  		<div class="contenidoInterno">
+		  			<span class="date">{{recomendacion.fecha}}</span>
+		  			<h2>{{recomendacion.titular}}</h2>
+		  			<div class="descripcion">{{recomendacion.descripcioncorta}}</div>
+		  			<div class="footerCard">
+		  				<ion-row>
+		  					<ion-col col-4>
+						  		<div class="precio">
+					  				{{recomendacion.precio}}	
+					  			</div>
+						  	</ion-col>
+						  	<ion-col col-8>
+						  		<div class="personas">
+					  				<div class="bkbImg" *ngFor="let persona of recomendacion.personas">
+					  					<img src="{{persona.imagen}}">
+					  				</div>
+					  			</div>
+						  	</ion-col>
+		  				</ion-row>
+		  			</div>	
+		  			<div class="botones">
+		  				<button class="comprar" (click)="comprar(recomendacion.id)">Comprar</button>
+		  				<button class="ver más" (click)="ver_detalle(recomendacion.id)">Ver más</button>
+		  			</div>	  			
+		  		</div>
+		  	</ion-col>
+		  </ion-row>
+		</ion-card>
+  	</div>
+  </div>	
+
+<div class="tabsBottom">
+	<div class="buttonAll">
+		<a href="javascript:void()" class="activado">
+			<ion-icon name="heart"></ion-icon>
+		</a>
+		<a href="javascript:void()" (click)="goTab1();">
+			<ion-icon name="contacts"></ion-icon>
+		</a>
+	</div>
+</div>
+</ion-content>
+
+
+
+

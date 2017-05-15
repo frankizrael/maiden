@@ -1,0 +1,40 @@
+<!--
+  Generated template for the LostpassPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Recuperar Contraseña</ion-title>
+    <div class="absButton">
+    	<button ion-button (click)="goRegister()"><ion-icon name="arrow-back"></ion-icon></button>
+    </div>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding class="recuperarpass">
+	<div class="recuperarPassContent">
+		<h1>Envia tu email para que <strong>Cronitos</strong> te ayude con tu contraseña</h1>
+	</div>
+	<div class="form">
+		<form (ngSubmit)="lostPass()" #lostForm="ngForm">
+			<ion-row>
+				<ion-col col-9>
+					<ion-list>
+		  				<ion-item class="nopadding">
+							<ion-label floating>Correo</ion-label>
+		    				<ion-input type="email" name="user" id="email" required></ion-input>
+		    			</ion-item>
+					</ion-list>
+				</ion-col>
+				<ion-col col-3>
+					<div class="buttonEnviar">
+						<button type="submit" ion-button block [disabled]="!lostForm.form.valid">Enviar</button>
+					</div>
+				</ion-col>
+			</ion-row>
+		</form>
+	</div>
+</ion-content>

@@ -1,0 +1,47 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding class="formLogin">
+	
+	<ion-row>
+		<ion-col col-12>
+			<div class="logo">
+				<img src="assets/img/logo_celeste.png">
+			</div>
+		</ion-col>
+	</ion-row>
+	<div class="loginPadre">
+		<form (ngSubmit)="loginNow()" #registerForm="ngForm">
+		<ion-list>
+		  <ion-item class="nopadding">
+		    <ion-label floating>Correo</ion-label>
+		    <ion-input type="email" name="user" id="email" [(ngModel)]="registerCredentials.email" required></ion-input>
+		  </ion-item>
+		  <ion-item class="nopadding">
+		    <ion-label floating>Contraseña</ion-label>
+		    <ion-input type="password" name="pass" id="pass" [(ngModel)]="registerCredentials.password" required></ion-input>
+		  </ion-item>
+		</ion-list>
+		<div class="loginCrop buttonInic">
+			<button type="submit" ion-button block [disabled]="!registerForm.form.valid">Login</button>
+			<div class="lineaDivisoria">
+				<b class="line_1"></b>
+				<span>O conectate también</span>				
+				<b class="line_2"></b>
+			</div>
+		</div>
+		</form>
+			<div class="loginCrop buttonInic">
+		    	<button (click)="loginFacebook()" ion-button outline block class="facebookCrap">Facebook</button>	
+		    </div> 
+		<div class="lostpass">
+			<button (click)="presentModal()" ion-button clear class="lostPass">Olvidaste la contraseña?</button>
+			<button (click)="goRegister()" ion-button clear class="no_cuenta">No tienes cuenta</button>
+		</div>
+		
+	</div>
+</ion-content>

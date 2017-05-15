@@ -1,0 +1,239 @@
+page-inicio {
+    background: url('../assets/img/nieve.jpg');
+    background-size: 100% 100%;
+}
+.welcomeContent {
+    text-align: center;
+    background: url('../assets/img/fond.png');
+    background-size: 100% 100%;
+}
+.welcomeContent ion-grid.grid {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.logo img {
+    display: inline-block;
+    width: 150px;
+}
+.buttonInic .button-outline {
+    border: solid 1px white;
+    color: white;
+    border-radius: 15px;
+}
+.buttonInic .button-default {
+    border-radius: 15px;
+    background: white;
+    color: #179eff;
+}
+.buttonInic .button-default:hover {
+    color: white;
+}
+.buttonInic button {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    max-width: 300px;
+    display: inline-block;
+}
+.logo {
+    margin-bottom: 30px;
+}
+.formLogin .logo {
+    margin-top: 40px;
+}
+page-login {
+    text-align: center;
+    background: url('../assets/img/nieve.jpg');
+    background-size: 100% 100%;
+}
+.formLogin {
+    background: rgba(255, 255, 255, 0.84);
+}
+.loginPadre .item-md {
+    background: transparent;
+}
+.item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+    color: #159cfe !important;
+    font-weight: 700;
+}
+.loginPadre .item-inner {
+    border-bottom: solid 1px #159cfe;
+}
+.lineaDivisoria {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    position: relative;
+}
+.lineaDivisoria span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+b.line_2 {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: calc(50% - 100px);
+    background: black;
+    height: 1px;
+}
+b.line_1 {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: calc(50% - 100px);
+    background: black;
+    height: 1px;
+}
+.facebookCrap {
+    background: #3b5998;
+}
+
+.absButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.buttonEnviar {
+    position: relative;
+    top: 25px;
+}
+.headerCronos {
+    background: url(../assets/img/nieve.jpg);
+    background-size: 100% 150%;
+    background-position: 0 90%;
+}
+
+.headerCronos ion-row{
+    background: url('../assets/img/fond.png');
+}
+
+.headerCronos ion-row {
+    background: url(../assets/img/fond.png);
+    background-position: 0 55%;
+}
+.headerCronos .button-menutoggle-md {
+    background: transparent;
+    box-shadow: none;
+}
+.logoHeader {
+    text-align: center;
+}
+.notification .number {
+    position: absolute;
+    font-size: 14px;
+    background: #ff3c3c;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    top: 7px;
+    right: 12px;
+}
+.notification {
+    font-size: 20px;
+    color: white;
+    padding-right: 20px;
+    text-align: right;
+    padding-top: 10px;
+}
+.logoHeader img {
+    width: 22px;
+}
+
+.slidesPersonas {
+    overflow-x: scroll;
+    padding-bottom: 5px;
+}
+.avatarPersona img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.34);
+}
+.contentPersonas {
+    float: left;
+    margin-right: 10px;
+}
+
+.tabsBottom a.activado {
+    color: #46a3e4;
+}
+.tabsBottom a {
+    width: calc(50% - 5px);
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    color: #585858;
+}
+.tabsBottom {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 150;
+    background: #f0f0f0;
+    box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.41);
+}
+.contenidoInterno .precio {
+    font-size: 22px;
+    font-weight: 700;
+    color: #46a3e4;
+}
+.contenidoInterno .descripcion {
+    font-size: 16px;
+}
+.contenidoInterno h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.contenidoInterno span {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #9a9a9a;
+    font-weight: 700;
+}
+
+.bkbImg {
+    float: right;
+    margin-left: 5px;
+}
+.contenidoInterno .personas {
+    overflow: hidden;
+}
+.bkbImg img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.botones {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botones .ver {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
+    color: #46a3e4;
+}
+.botones .comprar {
+    background: #46a3e4;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.botones button {
+    width: 49%;
+    height: 30px;
+    font-size: 15px;
+}
+.sectionRecomendaciones {
+    margin-bottom: 54px;
+}
